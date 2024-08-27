@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Logo PNG.png" type="image/x-png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/login.css">
+    <title>BankAlt - Login</title>
+</head>
+<body>
+    <header class="header">
+        <img class="nav-logo" src="assets/Logo PNG.png" alt="Logo BankAlt">
+        <nav class="nav">
+            <ul class="nav-lista">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Para você</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Para negócio</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Pontos</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Ajuda</a></li>
+                <li class="nav-item"><a class="nav-botao" href="login.html" >Acessar</a></li>
+            <ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="secao-login">
+            <img src="assets/Cartoes.png">
+            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img class="mx-auto h-20 w-auto" src="assets/Logo PNG.png" alt="Logo BankAlt">
+                <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Acese sua conta</h2>
+                </div>
+            
+                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" action="#" method="POST">
+                    <div>
+                    <label for="cpf" class="block text-sm font-medium leading-6 text-gray-900">CPF</label>
+                    <div class="mt-2">
+                        <input id="cpf" name="cpf" type="cpf" autocomplete="cpf" maxlength="11" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                    </div>
+            
+                    <div>
+                    <div class="flex items-center justify-between">
+                        <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Senha</label>
+                        <div class="text-sm">
+                        <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                    </div>
+            
+                    <div>
+                    <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Continuar</button>
+                    </div>
+                </form>
+            
+                <p class="mt-10 text-center text-sm text-gray-500">
+                    Não é membro?
+                    <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Cadastrar-se</a>
+                </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-item">
+            <p class="footer-texto"><span class="footer-logo">bankalt</span></p>
+            <p class="footer-texto">@bankalt.ofc</p>
+            <p></p>
+        </div>
+        <div class="footer-item footer-opcoes">
+            <div class="footer-opcoes-item">
+                <p class="footer-titulo">Transparência</p>
+                <p class="footer-texto">Privacidade</p>
+                <p class="footer-texto">Segurança</p>
+                <p class="footer-texto">Contratos</p>
+            </div>
+            <div class="footer-opcoes-item">
+                <p class="footer-titulo">Patrocinadores</p>
+                <p class="footer-texto">Unicamp</p>
+                <p class="footer-texto">Cotil</p>
+                <p class="footer-texto">CAUCAMP</p>
+            </div>
+            <div class="footer-opcoes-item">
+                <p class="footer-titulo">Baixe o app</p>
+                <p class="footer-texto">Privacidade</p>
+                <p class="footer-texto">Segurança</p>
+                <p class="footer-texto">Contratos</p>
+            </div>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
