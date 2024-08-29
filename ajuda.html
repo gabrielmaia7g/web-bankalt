@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/Logo PNG.png" type="image/x-png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ajuda.css">
     <title>BankAlt</title>
 </head>
 <body>
@@ -17,7 +17,14 @@
         <nav class="nav">
             <ul class="nav-lista">
                 <li class="nav-item"><a class="nav-link" href="index.html">Inicial</a></li>
-                <li class="nav-item"><!--<input type="checkbox">--><a class="nav-link" href="">Para você</a></li>
+                <li class="nav-item nav-menu">
+                    <div class="nav-menu-texto">Para você<img src="assets/Expand Arrow.png" alt=""></div>
+                    <ul class="drop-down">
+                        <li class="drop-down-item"><a href="contas.html">Contas</a></li>
+                        <li class="drop-down-item"><a href="">Cartões</a></li>
+                        <li class="drop-down-item"><a href="">Serviços</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="negocios.html">Para negócio</a></li>
                 <li class="nav-item"><a class="nav-link" href="pontos.html">Pontos</a></li>
                 <li class="nav-item"><a class="nav-link" href="ajuda.html">Ajuda</a></li>
@@ -26,6 +33,43 @@
         </nav>
     </header>
     <main class="main">
+        <section class="secao-ajuda">
+            <h1 class="ajuda-titulo">Você precisa de um HELP?</h1>
+            <img src="assets/Help.png" alt="">
+            <h1 class="ajuda-titulo-contorno">Você precisa de um HELP?</h1>
+        </section>
+        <section class="secao-pergunta">
+            <h1 class="pergunta-titulo">Perguntas Frequentes</h1>
+            <div class="box-perguntas">
+                <h2 class="pergunta-subtitulo">O que temos de diferentes?</h2>
+                <p class="pergunta-texto">O BankAlt é um banco que visa ajudar pessoas com autismo a aprenderem educação financeira, e como controlar seu dinheiro. No sistema aprensenta ferramentas adaptadas para esse público.</p>
+            </div>
+            <div class="box-perguntas">
+                <h2 class="pergunta-subtitulo">O banco é apenas para pessoas com autismo? </h2>
+                <p class="pergunta-texto">Não. Nosso banco tem funções convencionais que podem ser utilizadas normalmente.</p>
+            </div>
+            <div class="box-perguntas">
+                <h2 class="pergunta-subtitulo">Quantas vezes no dia posso fazer pix?</h2>
+                <p class="pergunta-texto">Quantas vezes você quiser. Nosso banco você poderá fazer pix quando preferir.</p>
+            </div>
+            <div class="box-perguntas">
+                <h2 class="pergunta-subtitulo">O banco é seguro?</h2>
+                <p class="pergunta-texto">Sim, nosso banco estará 100% precupado com sua segurança e a integridadade dos dados dos clientes.</p>
+            </div>
+            <div class="box-perguntas">
+                <h2 class="pergunta-subtitulo">A privacidade dos meus dados é confiavel?</h2>
+                <p class="pergunta-texto">Sim, nosso banco garante a segurança . Acesse nos Termos de Privacidade e Contratos de Serviços para saber mais.</p>
+            </div>
+        </section>
+        <section class="secao-mensagem">
+            <div class="mensagem-item mensagem-textos">
+                <h2 class="mensagem-titulo">Sua pergunta não é uma dessas?</h2>
+                <p class="mensagem-texto">Envie agora uma mensagem para nosso email!</p>
+            </div>
+            <div class="mensagem-item box-mensagem">
+                <textarea name="" id=""></textarea>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-item">
@@ -35,9 +79,9 @@
         <div class="footer-item footer-opcoes">
             <div class="footer-opcoes-item">
                 <p class="footer-titulo">Transparência</p>
-                <a class="footer-texto" href="assets/Termo de privacidade_.docx">Privacidade</a>
+                <a class="footer-texto" href="assets/docs/Termo de privacidade_.docx">Privacidade</a>
                 <a class="footer-texto" href="">Segurança</a>
-                <a class="footer-texto" href="assets/Termo de uso.docx">Uso</a>
+                <a class="footer-texto" href="assets/docs/Termo de uso.docx">Uso</a>
                 <a class="footer-texto" href="">Contratos</a>
             </div>
             <div class="footer-opcoes-item">
@@ -45,11 +89,11 @@
                 <a class="footer-texto" href="https://unicamp.br/" target="_blank">Unicamp</a>
                 <a class="footer-texto" href="https://www.cotil.unicamp.br/" target="_blank">Cotil</a>
             </div>
-            <div class="footer-opcoes-item">
-                <p class="footer-titulo">Baixe o app</p>
-                <p class="footer-texto">Privacidade</p>
-                <p class="footer-texto">Segurança</p>
-                <p class="footer-texto">Contratos</p>
+            <div class="footer-opcoes-item baixar">
+                <p class="footer-titulo baixar-titulo">Baixe o app</p>
+                <p class="footer-texto baixar-texto">Privacidade</p>
+                <p class="footer-texto baixar-texto">Segurança</p>
+                <p class="footer-texto baixar-texto">Contratos</p>
             </div>
         </div>
     </footer>

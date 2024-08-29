@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/Logo PNG.png" type="image/x-png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <title>BankAlt</title>
 </head>
@@ -22,9 +19,9 @@
                 <li class="nav-item nav-menu">
                     <div class="nav-menu-texto">Para você<img src="assets/Expand Arrow.png" alt=""></div>
                     <ul class="drop-down">
-                        <li><a href="contas.html">Contas</a></li>
-                        <li><a href="">Cartões</a></li>
-                        <li><a href="">Serviços</a></li>
+                        <li class="drop-down-item"><a href="contas.html">Contas</a></li>
+                        <li class="drop-down-item"><a href="">Cartões</a></li>
+                        <li class="drop-down-item"><a href="">Serviços</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="negocios.html">Para negócio</a></li>
@@ -37,7 +34,7 @@
     <main class="main">
         <section class="secao-principal">
             <div class="item">
-                <h1 class="titulo">Faça a escolha certa e venha ser <span class="logo">bankalt</span>,o banco para você!</h1>
+                <h1 class="titulo">Faça a escolha certa e venha ser  <span class="texto-logo">bankalt</span>, o banco para você!</h1>
                 <p class="texto">Disponível na palma da sua mão</p>
                 <div class="conta">
                     <a class="botao" href="login.html">Abrir conta agora</a>
@@ -56,7 +53,7 @@
                 <p class="texto">Nós somos um banco digital especialmente adaptado para atender às necessidades das pessoas com <span class="texto-destaque">Transtorno do Espectro Autista (TEA).</span></p>
                 <p class="texto">Ele combina serviços bancários convencionais com recursos de <span class="texto-destaque">educação financeira</span> e <span class="texto-destaque">suporte personalizado</span>, oferecendo uma plataforma segura e acessível para gerenciamento de finanças.</p>
                 <div class="botoes">
-                    <button>Saiba mais</button>
+                    <button class="botao">Saiba mais</button>
                     <img src="assets/Speaker.png" alt="">
                 </div>
             </div>
@@ -66,19 +63,19 @@
         </section>
         <section class="secao-vantagens">
             <div class="box">
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Acessível</p></div>
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Completo</p></div>
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Seguro</p></div>
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Moderno</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Acessível</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Completo</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Seguro</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Moderno</p></div>
             </div>
             <div class="box">
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Adsministativo</p></div>
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Com auxílio</p></div>
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Educativo</p></div>
-                <div class="item"><img src="/assets/Approval.png"><p class="texto">Personalizado</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Adsministativo</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Com auxílio</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Educativo</p></div>
+                <div class="item"><img src="assets/Approval.png"><p class="texto">Personalizado</p></div>
             </div>
         </section>
-        <section class="secao-ajuda">
+        <section class="secao-central-ajuda">
             <h1 class="titulo">Central de Ajuda</h1>
             <p class="texto">Ficou com alguma dúvida e precisa de ajuda?</p>
             <a class="botao" href="ajuda.html">Tire Aqui</a>
@@ -92,9 +89,9 @@
         <div class="footer-item footer-opcoes">
             <div class="footer-opcoes-item">
                 <p class="footer-titulo">Transparência</p>
-                <a class="footer-texto" href="assets/Termo de privacidade_.docx">Privacidade</a>
+                <a class="footer-texto" href="assets/docs/Termo de privacidade_.docx">Privacidade</a>
                 <a class="footer-texto" href="">Segurança</a>
-                <a class="footer-texto" href="assets/Termo de uso.docx">Uso</a>
+                <a class="footer-texto" href="assets/docs/Termo de uso.docx">Uso</a>
                 <a class="footer-texto" href="">Contratos</a>
             </div>
             <div class="footer-opcoes-item">
@@ -102,11 +99,11 @@
                 <a class="footer-texto" href="https://unicamp.br/" target="_blank">Unicamp</a>
                 <a class="footer-texto" href="https://www.cotil.unicamp.br/" target="_blank">Cotil</a>
             </div>
-            <div class="footer-opcoes-item">
-                <p class="footer-titulo">Baixe o app</p>
-                <p class="footer-texto">Privacidade</p>
-                <p class="footer-texto">Segurança</p>
-                <p class="footer-texto">Contratos</p>
+            <div class="footer-opcoes-item baixar">
+                <p class="footer-titulo baixar-titulo">Baixe o app</p>
+                <p class="footer-texto baixar-texto">Privacidade</p>
+                <p class="footer-texto baixar-texto">Segurança</p>
+                <p class="footer-texto baixar-texto">Contratos</p>
             </div>
         </div>
     </footer>

@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(login.css);
+@import url(ajuda.css);
 
 *{
     text-decoration: none;
@@ -39,6 +40,10 @@ body{
 ::selection {
     background-color: var(--azul);
     color: var(--branco);
+}
+
+.botao:hover{
+    background-color: var(--verde-agua);
 }
 
 /*MENUS*/
@@ -121,17 +126,18 @@ header nav a{
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
 
-    & li a{
-        color: var(--branco);
-        margin: 5px;
-    }
+        & a{
+            color: var(--branco);
+            margin: 5px;
+        }
 
-    &li:hover{
-        color: var(--cinza);
+        & a:hover{
+            color: var(--cinza);
+        }
     }
 }
+
 
 
 
@@ -140,12 +146,14 @@ header nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0;
     color: var(--roxo);
-    padding: 90px 150px;
+    margin: 50px;
+    height: 70vh;
 }
 
 .secao-principal .item{
-    /*width: 650px;*/
+    width: 650px;
 }
 
 .secao-principal .titulo{
@@ -153,15 +161,24 @@ header nav a{
     font-weight: 700;
 }
 
+.texto-logo img{
+    width: 50px;
+}
+
 .secao-principal .texto{
     font-size: 1.5em;
     font-weight: 500;
     color: var(--azul);
     margin: 15px 0px;
+
 }
 
 .secao-principal img{
     width: 100%;
+}
+
+.secao-principal .logo{
+    width: 150px;
 }
 
 .secao-principal .logo{
@@ -212,7 +229,7 @@ header nav a{
 }
 
 .secao-descricao img{
-    height: 100%;
+    width: 100%;
 }
 
 .secao-descricao .titulo{
@@ -358,7 +375,7 @@ header nav a{
     }
 }
 
-.secao-ajuda{
+.secao-central-ajuda{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,6 +420,7 @@ header nav a{
     color: var(--cinza);
     display: flex;
     justify-content: space-between;
+    align-items: start;
     flex-wrap: wrap;
     padding: 20px 10px;
 }
@@ -432,8 +450,8 @@ header nav a{
 
 .footer-opcoes{
     display: flex;
+    justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 .footer-opcoes-item{
@@ -443,29 +461,80 @@ header nav a{
     margin: 0 15px;
 }
 
-@media (max-width: 768px) { 
+.baixar{
+    color: var(--branco);
+
+    & .baixar-texto{
+        color: var(--branco);
+    }
+}
+
+/*768*/
+@media (max-width: 850px) { 
+    main{
+        font-size: 14px;
+    }
+
+    .header{
+        display: none;
+    }
+
+
     .secao-principal{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: auto;
+        
+        & .item{
+            width: 100%;
+        }
+
+        & img{
+           display: none; 
+        }
+    }
+
+    .secao-descricao{
+        flex-direction: column;
+
+        & .descricao-img{
+            width: 60%;
+        }
+
+        /*& .titulo{
+            text-align: center;
+        }*/
     }
 
     .secao-vantagens{
+        font-size: 1.5em;
         flex-direction: column;
         justify-content: left;
-
+        margin: 0px;
+        padding: 50px;
         gap: 10px;
 
         & .box{
             display: flex;
-            justify-content: left;
+            justify-content: center;
             gap: 5px;
+        }
+    }
+
+    .footer-opcoes{
+        margin: 10px;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        & .footer-opcoes-item{
+            padding: 0px;
         }
     }
 }
 
-/*// Small devices (landscape phones, 576px and up)
+/* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
