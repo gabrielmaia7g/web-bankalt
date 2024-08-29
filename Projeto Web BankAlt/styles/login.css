@@ -1,0 +1,114 @@
+@import url(style.css);
+
+.secao-login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul-escuro);
+    height: 90vh;
+
+    & img{
+        height: auto;
+    }
+
+    & .login{
+        display: flex;
+        padding: 40px;
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--branco);
+        border-radius: 10px;
+        color: var(--branco);
+        -webkit-box-shadow: -2px 2px 25px -12px var(--branco);
+        -moz-box-shadow: -2px 2px 25px -12px var(--branco);
+        box-shadow: -2px 2px 25px -12px var(--branco);
+
+        & .titulo{
+            font-size: 1.5em;
+            color: var(--roxo);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+    }
+
+    form{
+        color: var(--roxo);
+    
+        & input{
+            font-family: 'Poppins';
+        }
+
+        & .input{
+            padding: 10px;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 0px;
+            border-bottom: 1px solid var(--roxo);
+            border-radius: 5px;
+        }
+    
+        & .label{
+            font-weight: 600;
+        }
+
+        & .enviar{
+            
+            padding: 10px;
+            background-color: var(--roxo);
+            color: var(--branco);
+            font-weight: 800;
+            border: 0px;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        & .enviar:hover{
+            background-color: var(--verde-agua);
+        }
+    }
+
+    & .texto{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        color: var(--roxo);
+        
+
+        & a{
+            color: var(--roxo);
+            font-weight: 500;
+        }
+
+        & a:hover{
+            text-decoration: underline 2.5px var(--azul); 
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .secao-login{
+        flex-direction: column;
+        padding: 50px;
+
+        & img{
+            display: none;
+        }
+
+        .login{
+            width: 100%;
+
+            & .input{
+                width: 100%;
+            }
+        }
+    }
+}
