@@ -1,0 +1,99 @@
+@import url(style.css);
+
+.secao-servicos {
+    padding: 50px;
+}
+
+.secao-servicos-tea{
+    background-color: var(--azul-claro);
+}
+
+.servicos-box-descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--roxo);
+    text-align: center;
+    margin: 60px 0;
+}
+
+.servicos-titulo{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.servicos-subtitulo{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.servicos-grade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    /*display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;*/
+}
+
+.servicos-grade-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    padding: 30px;
+    background-color: var(--branco);
+    border: 3px solid var(--roxo);
+    border-radius: 20px;
+    
+
+    & h2{
+        font-size: 2em;
+        font-weight: 700;
+        
+    }
+
+    & p{
+        
+        font-size: 1.25em;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 150%;
+    }
+
+    
+}
+
+.servicos-grade-item + .grade-item-roxo{
+    background-color: var(--roxo);
+    color: var(--branco);
+}
+
+.servicos-grade-item:hover{
+    transition: 1s ease-in-out;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 3px solid var(--azul-escuro);
+}
+
+
+@media (max-width: 850px) {
+    .secao-servicos {
+        padding: 20px;
+    }
+
+    .servicos-grade-item{
+        width: 100%;
+        & p{
+            text-align: left;
+        }
+    }
+
+    
+}

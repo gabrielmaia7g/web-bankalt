@@ -35,6 +35,13 @@ body{
     flex-direction: column;
     justify-content: space-between;
     font-size: 16px;
+    color: var(--roxo);
+    word-wrap: break-word;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
 }
 
 ::selection {
