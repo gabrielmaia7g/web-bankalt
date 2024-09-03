@@ -1,0 +1,49 @@
+@import url(style.css);
+
+.secao-cartoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--roxo);
+    text-align: center;
+    margin: 60px 0;
+}
+
+.cartoes-titulo{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cartoes-texto{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
+.secao-vantagens{
+    padding: 50px;
+    background-color: var(--roxo-claro);
+    color: var(--roxo);
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    
+    .vantagens-titulo{
+        text-align: center;
+        font-size: 3em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .vantagens-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

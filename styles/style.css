@@ -1,5 +1,7 @@
 @import url(reset.css);
 @import url(login.css);
+@import url(cartoes.css);
+@import url(negocios.css);
 
 *{
     text-decoration: none;
