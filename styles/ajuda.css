@@ -1,21 +1,31 @@
 @import url(style.css);
 
 .secao-ajuda {
-  background: linear-gradient(var(--azul), var(--roxo));
+  background: var(--degrade-azul-roxo);
+  width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   & img {
+    display: none;
     margin: 0 auto;
     position: absolute;
     height: 100%;
-    left: 20%;
+    left: 25%;
   }
 
   & h1 {
+    
     font-size: 6.25em;
     position: absolute;
+    /*top: 50%;
+    */
+    left: 15%;
     text-align: center;
-    top: 50%;
+    
     margin: 20px;
   }
 
@@ -25,6 +35,7 @@
   }
 
   & .ajuda-titulo-contorno {
+    position: absolute;
     color: transparent;
     z-index: 1;
     -webkit-text-stroke-width: 2px; /* largura da borda */
@@ -66,7 +77,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 15px;
   padding: 50px;
+  background-color: var(--roxo-claro);
 
   & .mensagem-textos {
     padding: 15px;
@@ -76,51 +89,59 @@
 
     & .mensagem-titulo {
       font-size: 2.5em;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    
     & .mensagem-texto {
         font-size: 1.25em;
+        font-weight: 500;
     }
   }
 
   & .box-mensagem {
 
     & textarea {
-    border: 1px #000 solid;
-      padding: 15px;
+      border: 1px #000 solid;
+      width: 500px;
+      height: 500px;
     }
   }
 }
 
 @media (max-width: 850px) {
   .secao-ajuda {
-    background: linear-gradient(var(--azul), var(--roxo));
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    text-transform: uppercase;
+
+    h1{
+      font-size: 2.5em;
+      text-align: center;
+      position: static;
+    }
+
+    .ajuda-titulo-contorno{
+      display: none;
+    }
 
     & img {
       display: none;
-      position: static;
     }
+  }
 
-    & h1 {
-      font-size: 6.25em;
-      position: static;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+  .secao-mensagem{
+    flex-direction: column;
 
-    & .ajuda-titulo {
-      color: var(--branco);
-      z-index: 0;
-    }
+    & .box-mensagem {
 
-    & .ajuda-titulo-contorno {
-      display: none;
-      color: transparent;
-      z-index: 1;
-      -webkit-text-stroke-width: 2px; /* largura da borda */
-      -webkit-text-stroke-color: var(--branco); /* cor da borda */
+      & textarea {
+        width: 100%;
+        height: 500px;
+      }
     }
   }
 }

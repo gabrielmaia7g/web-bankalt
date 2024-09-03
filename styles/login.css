@@ -88,12 +88,6 @@
     }
 }
 
-
-
-
-
-
-
 @media (max-width: 850px) {
     .secao-login{
         flex-direction: column;
@@ -109,6 +103,10 @@
             & .input{
                 width: 100%;
             }
+        }
+
+        .texto{
+            gap: 15px;
         }
     }
 }

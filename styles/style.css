@@ -1,6 +1,5 @@
 @import url(reset.css);
 @import url(login.css);
-@import url(ajuda.css);
 
 *{
     text-decoration: none;
@@ -14,11 +13,12 @@
     --branco: rgba(240,239,244,1);
     --cinza: rgba(130,130,130,1);
     --efeito-vidro: rgba(255, 255, 255, 0.05);
-    --degrade-verde-azul: linear(var(--verde-agua), var(--azul));
-    --degrade-azul-roxo: linear(var(--azul), var(--roxo));
-    --degrade-roxo: linear(rgba(123,44,191),rgba(90,24,154,1));
+    --degrade-verde-azul: linear-gradient(var(--verde-agua), var(--azul));
+    --degrade-azul-roxo: linear-gradient(var(--azul), var(--roxo));
+    --degrade-roxo: linear-gradient(rgba(123,44,191),rgba(90,24,154,1));
     --preto: rgba(0,0,0,1);
     --roxo: rgba(53, 61, 171, 1);
+    --roxo-carrosel: rgba(53, 61, 171, 0.20);
     --roxo-claro: rgba(53,61,171,0.2);
     --verde: rgba(4,169,92,1);
     --verde-claro: rgba(4, 169, 92, 0.30);
@@ -36,12 +36,6 @@ body{
     justify-content: space-between;
     font-size: 16px;
     color: var(--roxo);
-    word-wrap: break-word;
-}
-
-h1{
-    font-size: 3em;
-    font-weight: 700;
 }
 
 ::selection {
@@ -49,8 +43,16 @@ h1{
     color: var(--branco);
 }
 
+p{
+    line-height: 150%;
+}
+/*:hover{
+    transition: 0.5s ease-in-out;
+}*/
+
 .botao:hover{
-    background-color: var(--verde-agua);
+    transition: 0.5s  ease-in-out;
+    background-color: var(--azul);
 }
 
 /*MENUS*/
@@ -66,7 +68,7 @@ h1{
     font-weight: 500;
     position: sticky;
     top: 0px;
-    text-align: center;
+    z-index: 1;
 }
 
 .nav-lista{
@@ -75,8 +77,17 @@ h1{
     gap: 15px;
 }
 
+.nav-link{
+    padding: 5px 15px 5px 15px;
+}
+
 .nav-link:hover{
-    text-decoration: underline 2px var(--azul);
+    /*text-decoration: underline 2px var(--azul);
+    transition: 0.5s  ease;
+    */
+    color: var(--azul);
+    border-bottom: 2.5px solid var(--azul);
+
 }
 
 .nav-logo{
@@ -97,9 +108,7 @@ header nav a{
 }
 
 .nav-botao:hover{
-    text-decoration: none;
-    color: var(--branco);
-    background-color: var(--verde);
+    background-color: var(--azul);
 }
 
 .nav-menu-texto{
@@ -140,6 +149,7 @@ header nav a{
         }
 
         & a:hover{
+            transition: 0.5s  ease-in;
             color: var(--cinza);
         }
     }
@@ -351,7 +361,7 @@ header nav a{
     }
 }
 
-.secao-vantagens{
+.secao-conteudo{
     margin: 90px;
     display: flex;
     justify-content: space-evenly;
@@ -515,7 +525,7 @@ header nav a{
         }*/
     }
 
-    .secao-vantagens{
+    .secao-conteudo{
         font-size: 1.5em;
         flex-direction: column;
         justify-content: left;
@@ -541,17 +551,10 @@ header nav a{
     }
 }
 
-/* Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }*/
+/*(@media screen and (prefers-color-scheme: dark) {
+    // Dark mode styles
+    :root{
+        --branco: #000000;
+        --preto: rgba(240,239,244,1);
+    }
+}*/
