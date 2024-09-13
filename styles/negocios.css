@@ -1,5 +1,9 @@
 @import url(style.css);
 
+li{
+    color: var(--roxo);
+    text-decoration: none;
+}
 
 .secao-negocios-img{
     background: url("../assets/Empresas.png") lightgray 50% / cover no-repeat;
@@ -60,7 +64,6 @@
             }
         }
     }
-    
 }
 
 .secao-vantagens{
@@ -71,14 +74,14 @@
     flex-direction: column;
     gap: 54px;
     
-    .vantagens-titulo{
+    & .vantagens-titulo{
         text-align: center;
         font-size: 3em;
         font-weight: 700;
         text-transform: uppercase;
     }
 
-    .vantagens-box{
+    & .vantagens-box{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -115,7 +118,7 @@
         text-align: right;
     }
 
-    .negocios-box{
+    & .negocios-box{
         flex-direction: row-reverse;
 
         &  li{

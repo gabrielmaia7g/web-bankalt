@@ -43,7 +43,7 @@
     justify-content: space-evenly;
     align-self: stretch;
     border-radius: 20px;
-    gap: 50px;
+    gap: 15px;
 }
 
 .pontos-lista li::before{
@@ -53,10 +53,11 @@
 .pontos-box-titulo{
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .pontos-box-texto, .pontos-lista li{
+    color: var(--branco);
     font-size: 1.25em;
     margin-bottom: 15px;
 }
