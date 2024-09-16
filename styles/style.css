@@ -567,6 +567,12 @@ hr{
         font-size: 10px;
     }
 
+    header{
+        background-color: var(--branco);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    }
+
     .nav{
         display: none;
     }
@@ -626,6 +632,7 @@ hr{
     }
 
     .nav-lista-mobile li{
+        
         display: block;
         padding: 20px;
         line-height: 30px;

@@ -1,6 +1,9 @@
 
 
 /*
+
+document.documentElement.style.setProperty('--animate-duration', '2s');
+
 const dropDownMobile = document.querySelector('.drop-down-mobile');
 const btnMobile = document.querySelector('.botaoMobile');
 

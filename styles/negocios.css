@@ -8,7 +8,7 @@ li{
 .secao-negocios-img{
     background: url("../assets/Empresas.png") lightgray 50% / cover no-repeat;
     
-    & .img{
+    & img{
         width: 100%;
     }
 }
@@ -144,6 +144,11 @@ li{
         .conta-pj-box{
             align-items: end;
         }
+    }
+
+    & .secao-vantagens{
+        font-size: 12px;
+        
     }
 }
 
