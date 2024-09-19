@@ -2,6 +2,7 @@
 @import url(login.css);
 @import url(cartoes.css);
 @import url(negocios.css);
+@import url(contas.css);
 
 *{
     text-decoration: none;
@@ -594,16 +595,6 @@ hr{
         margin: 25px;
     }
 
-    /*.nav-menu:active img{
-        width: 25px;
-        transition: 0.25s ease-in-out all;
-        transform: rotate(180deg);
-    }
-
-    .nav-menu: .drop-down-mobile{
-        display: block;
-    }*/
-
     .drop-down-mobile{
         /*
         display: none;
@@ -653,7 +644,7 @@ hr{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
+        height: 50vh;
         
         & .item{
             width: 100%;
@@ -666,14 +657,11 @@ hr{
 
     .secao-descricao{
         flex-direction: column;
+        padding: 50px 20px;
 
         & .descricao-img{
             width: 60%;
         }
-
-        /*& .titulo{
-            text-align: center;
-        }*/
     }
 
     .secao-conteudo{
@@ -706,7 +694,7 @@ hr{
     }
 
     hr{
-        border: 2.5px solid var(--cinza);
+        border: 1px solid var(--cinza);
         display: block;
     }
 }

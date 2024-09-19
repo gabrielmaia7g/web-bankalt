@@ -89,16 +89,18 @@
   }
 
   & button{
-    border: 0px;
-    border-radius: 15px;
-    background: var(--roxo);
-    color: var(--branco);
-    padding: 15px;
+      font-family: 'Poppins';
+      text-transform: uppercase;
+      border: 0px;
+      border-radius: 15px;
+      background: var(--roxo);
+      color: var(--branco);
+      padding: 15px;
   }
 
   & button:hover{
-    background: var(--azul);
-    border: 0;
+      background: var(--azul);
+      border: 0;
   }
 }
 

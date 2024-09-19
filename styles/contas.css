@@ -1,13 +1,14 @@
 @import url(style.css);
 
 .secao-contas-img{
-    background: url("../assets/Wallpaper\ Puzzle\ Azul.png") lightgray 50% / cover no-repeat;
+    /*background: url("../assets/QuebraCabeca.jpg") lightgray 50% / cover no-repeat;*/
+    background: var(--degrade-azul-roxo);
     display: flex;
     justify-content: center;
     align-items: center; 
     font-weight: 700;
     padding: 100px 50px 100px 50px;
-    
+    color: var(--branco);
 
     .contas-box-destaque{
         width: 650px;
@@ -21,6 +22,8 @@
         font-size: 3em;
         margin-bottom: 20px;
         line-height: 110%;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: var(--roxo);
     }
     
     img{
@@ -31,10 +34,15 @@
         font-size: 1.25em;
         padding: 15px;
         border-radius: 10px;
-        background-color: var(--roxo);
-        color: var(--branco);
+        background-color: var(--branco);
+        color: var(--roxo);
         text-transform: uppercase;
         text-decoration: none;
+    }
+
+    & .botao:hover{
+        color: var(--branco);
+        background: var(--verde-agua);
     }
 }
 

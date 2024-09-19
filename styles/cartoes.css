@@ -74,18 +74,20 @@
 }
 
 .cartao-apresentao-textos{
-    padding: 20px;
     font-size: 1em;
 }
 
 .cartoes-titulo{
     text-align: center;
+    margin: 15px;
 }
 
 .cartoes-texto{
     font-size: 1.5em;
     font-weight: 500;
     line-height: 110%;
+    text-align: justify;
+    margin: 25px;
 }
 
 
@@ -153,7 +155,6 @@
         font-weight: 300;
     }
     
-    
 }
 
 
@@ -169,10 +170,28 @@
 
     .cartao-apresentao{
         flex-direction: column;
+        
+        & div{
+            & img{
+                height: 450px;
+            }
+        }
     }
 
     .cartao-premium-vantagens{
         flex-direction: column;
         gap: 36px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .cartao-apresentao{
+        & div{
+            & img{
+                height: 300px;
+            }
+        }
     }
 }
