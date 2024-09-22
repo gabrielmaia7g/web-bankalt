@@ -1,7 +1,7 @@
 @import url(style.css);
 
 .secao-servicos-img{
-    background: url("../assets/Empresas.png") lightgray 50% / cover no-repeat;
+    background: url("../assets/Serviços.png") lightgray 50% / cover no-repeat;
     
     & img{
         width: 100%;

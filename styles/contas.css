@@ -3,6 +3,7 @@
 .secao-contas-img{
     /*background: url("../assets/QuebraCabeca.jpg") lightgray 50% / cover no-repeat;*/
     background: var(--degrade-azul-roxo);
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center; 
