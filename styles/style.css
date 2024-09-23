@@ -95,7 +95,11 @@ button{
     */
     color: var(--azul);
     border-bottom: 2.5px solid var(--azul);
+}
 
+.nav-link-ativo{
+    color: var(--branco);
+    background: var(--roxo);
 }
 
 .nav-logo{
@@ -114,9 +118,14 @@ header nav a{
     border-radius: 5px;
 }
 
+.nav-botao-ativo{
+    background: var(--azul);
+}
+
 .nav-botao:hover{
     background-color: var(--azul);
 }
+
 
 .nav-menu-texto{
     display: flex;
