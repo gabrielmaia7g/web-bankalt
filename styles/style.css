@@ -65,9 +65,7 @@ button{
 
 /*MENUS*/
 .header{
-    background-color: var(--efeito-vidro);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,9 +88,6 @@ button{
 }
 
 .nav-link:hover{
-    /*text-decoration: underline 2px var(--azul);
-    transition: 0.5s  ease;
-    */
     color: var(--azul);
     border-bottom: 2.5px solid var(--azul);
 }

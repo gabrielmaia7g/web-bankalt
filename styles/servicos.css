@@ -50,6 +50,18 @@
     justify-content: center;*/
 }
 
+.servicos-grade div:nth-child(even){
+    background-color: var(--roxo);
+    color: var(--branco);
+}
+
+.servicos-grade div:nth-child(even):hover{
+    transition: 1s ease-in-out;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 3px solid var(--azul-escuro);
+}
+
 .servicos-grade-item{
     display: flex;
     flex-direction: column;
@@ -69,7 +81,6 @@
     }
 
     & p{
-        
         font-size: 1.25em;
         font-weight: 500;
         text-align: justify;
@@ -85,19 +96,12 @@
     margin: 10px 30px;
 }
 
-
-.grade-item-roxo{
-    background-color: var(--roxo);
-    color: var(--branco);
-}
-
 .servicos-grade-item:hover{
     transition: 1s ease-in-out;
     background-color: var(--azul);
     color: var(--branco);
     border: 3px solid var(--azul-escuro);
 }
-
 
 @media (max-width: 850px) {
     .secao-servicos {
