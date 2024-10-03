@@ -304,6 +304,10 @@ header nav a{
     height: 35px;
 }
 
+.botao-conta:hover{
+    background: var(--azul);
+}
+
 /*SECAO DESCRICAO*/
 .secao-descricao{
     background-color: var(--roxo);
@@ -315,7 +319,7 @@ header nav a{
     color: var(--branco);
 }
 
-.secao-descricao .item{
+.secao-descricao .item-descricao{
     display: flex;
     align-items: stretch;
     flex-direction: column;
@@ -327,13 +331,13 @@ header nav a{
     width: 100%;
 }
 
-.secao-descricao .titulo{
+.secao-descricao .titulo-descricao{
     font-size: 2.5em;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-.secao-descricao .texto{
+.secao-descricao .texto-descricao{
     font-size: 1.5em;
     font-weight: 600;
     margin: 10px 0;
@@ -349,7 +353,7 @@ header nav a{
     gap: 20px;
 }
 
-.secao-descricao button{
+.secao-descricao .botao-mais{
     padding: 15px;
     background-color: var(--vermelho);
     color: var(--branco);
@@ -359,10 +363,27 @@ header nav a{
     text-transform: uppercase;
 }
 
-.secao-descricao .botoes img{
-    width: 35px;
-    height: 35px;
+.secao-descricao  .botao-mais:hover{
+    transition: 0.5s  ease-in-out;
+    background-color: var(--azul);
 }
+
+.secao-descricao .botoes .acao-mensagem{
+   color: var(--branco);
+}
+
+.secao-descricao .botoes .acao-mensagem:hover{
+    transition: 0.5s  ease-in-out;
+    color: var(--cinza);
+ }
+
+.secao-descricao .acao-mensagem{
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+
 
 /*SECAO DESTAQUE*/
 .secao-destaque{
