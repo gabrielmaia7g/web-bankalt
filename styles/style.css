@@ -58,6 +58,10 @@ button{
     font-family: 'Poppins';
 }
 
+.botao, a{
+    text-decoration: none;
+}
+
 .botao:hover{
     transition: 0.5s  ease-in-out;
     background-color: var(--azul);
@@ -77,22 +81,31 @@ button{
     z-index: 1;
 }
 
+.nav{
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-lista{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.nav-link{
-    padding: 5px 15px 5px 15px;
+.nav-links, .nav-menu-texto{
+    padding: 10px 15px 10px 15px !important;
+    margin: 10px;
+    color: var(--roxo);
 }
 
-.nav-link:hover{
+.nav-links:hover{
     color: var(--azul);
     border-bottom: 2.5px solid var(--azul);
 }
 
-.nav-link-ativo{
+.nav-links-ativo{
     color: var(--branco);
     background: var(--roxo);
 }
@@ -102,15 +115,13 @@ button{
     height: 50px;
 }
 
-header nav a{
-    color: var(--roxo);
-}
 
 .nav-botao{
     padding: 10px;
     background-color: var(--roxo);
     color: var(--branco);
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .nav-botao-ativo{
@@ -122,7 +133,14 @@ header nav a{
 }
 
 
+
+.nav-menu-texto, .dropdown-item{
+    color: var(--roxo) !important;
+
+}
+
 .nav-menu-texto{
+    color: var(--roxo);
     display: flex;
     align-items: center;
 }
@@ -168,8 +186,17 @@ header nav a{
 
 /*MENU RESPONSIVO*/
 
-.nav-mobile{
-    display: none;
+.navbar{
+    padding: 15px 0;
+}
+
+.navbar-toggler{
+    border: 0 !important;
+    padding: 10px;
+}
+
+.navbar-toggler:active{
+    border: 0 !important;
 }
 
 .burger {
@@ -604,65 +631,6 @@ hr{
         -webkit-backdrop-filter: blur(0px);
     }
 
-    .nav{
-        display: none;
-    }
-
-    .nav-mobile{
-        display: block;
-    }
-
-    .nav-lista{
-        display: none;
-    }
-
-    .nav-lista-mobile{
-        background-color: var(--branco);
-        position: fixed;
-        left: 0;
-        width: 100%;
-        left: -100%;
-        margin: 25px;
-    }
-
-    .drop-down-mobile{
-        /*
-        display: none;
-        position: absolute;
-        */
-        background-color: var(--roxo);
-        width: 80%;
-        position: static;
-        padding: 5px;
-
-        & li{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-
-            & a{
-                color: var(--branco);
-                margin: 5px;
-            }
-        }
-    }
-
-    .drop-down-mobile li{
-        margin: 0;
-        background: none;
-    }
-
-    .nav-lista-mobile li{
-        
-        display: block;
-        padding: 20px;
-        line-height: 30px;
-        transition: all .5s;
-    }
-
-    .nav-lista-mobile li a:hover{
-        background: none;
-    }
 
     #burger:checked ~ .nav-lista-mobile{
         left: 0;
