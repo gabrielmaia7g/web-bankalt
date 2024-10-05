@@ -51,6 +51,45 @@
   }
 }
 
+#formAjuda{
+  
+
+  & label{
+    font-weight: 600;
+  }
+
+  & input, textarea{
+    font-size: 1em;
+    font-family: 'Poppins';
+    margin-top: 5px;
+    padding: 10px 0px 10px 5px;
+    width: 100%;
+    min-width: 800px;
+    border: 1px solid var(--roxo);
+    border-radius: 5px;
+  }
+}
+
+.box-inputs{
+  margin-bottom: 15px;
+}
+
+input[type="submit"]{
+  font-family: 'Poppins';
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0px;
+  border-radius: 5px;
+  background: var(--roxo);
+  color: var(--branco);
+  padding: 15px;
+}
+
+input[type="submit"]:hover{
+  background: var(--azul);
+  border: 0;
+}
+
 .secao-mensagem {
   display: flex;
   flex-direction: column;
@@ -79,28 +118,16 @@
   }
 
   & .box-mensagem {
+    display: flex;
+    flex-direction: column;
 
     & textarea {
+      margin-top: 5px;
       border: 1px #000 solid;
       width: 400px;
       height: 100px;
       font-family: 'Poppins';
     }
-  }
-
-  & button{
-      font-family: 'Poppins';
-      text-transform: uppercase;
-      border: 0px;
-      border-radius: 15px;
-      background: var(--roxo);
-      color: var(--branco);
-      padding: 15px;
-  }
-
-  & button:hover{
-      background: var(--azul);
-      border: 0;
   }
 }
 
@@ -131,6 +158,21 @@
       & textarea {
         width: 250px;
       }
+    }
+  }
+
+  #formAjuda{
+    & input, textarea{
+      min-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  
+  #formAjuda{
+    & input, textarea{
+      min-width: 200px;
     }
   }
 }
