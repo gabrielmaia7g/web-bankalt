@@ -1,16 +1,13 @@
-<<<<<<< HEAD
 const btnMobileLista = document.querySelector('.btnMenu')
 const navMobileLista = document.querySelector('.drop-down-mobile');
-
-btnMobileLista.addEventListener('click', ()=> {
-    navMobileLista.classList.toggle('btnMenu-hidden');
-})
-=======
 const btnPlayDescricao = document.querySelector('.tocar-mensagem');
 const btnPauseDescricao = document.querySelector('.pausar-mensagem');
 const textoDescricao = document.querySelectorAll('.texto-descricao');
 const synth = window.speechSynthesis;
->>>>>>> 382766941de9a1c63920ff80575f994a87efb456
+
+btnMobileLista.addEventListener('click', ()=> {
+    navMobileLista.classList.toggle('btnMenu-hidden');
+})
 
 btnPlayDescricao.addEventListener('click', () => {
     const utterance1 = new SpeechSynthesisUtterance(textoDescricao.item(0).textContent);
