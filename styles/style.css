@@ -54,6 +54,7 @@ p{
 }*/
 
 
+
 button{
     font-family: 'Poppins';
 }
@@ -125,6 +126,18 @@ header nav a{
 .nav-menu-texto{
     display: flex;
     align-items: center;
+    padding: 5px 15px 5px 15px;
+}
+
+.btnMenu-hidden{
+    display: none;
+    transition: 0.25s ease-in-out all;
+    transform: rotate(-180deg);
+}
+
+.btnMenu:focus img{
+    transition: 0.25s ease-in-out all;
+    transform: rotate(-180deg);
 }
 
 .nav-menu img{
