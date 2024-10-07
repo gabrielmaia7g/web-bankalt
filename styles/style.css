@@ -131,13 +131,6 @@ header nav a{
 
 .btnMenu-hidden{
     display: none;
-    transition: 0.25s ease-in-out all;
-    transform: rotate(-180deg);
-}
-
-.btnMenu:focus img{
-    transition: 0.25s ease-in-out all;
-    transform: rotate(-180deg);
 }
 
 .nav-menu img{
