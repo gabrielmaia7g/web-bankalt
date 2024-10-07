@@ -91,12 +91,28 @@
                 <h2 class="mensagem-titulo">Sua pergunta não é uma dessas?</h2>
                 <p class="mensagem-texto">Envie agora uma mensagem para nosso email!</p>
             </div>
-            <div class="mensagem-item box-mensagem">
-                <textarea name="" id=""></textarea>
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
+
+            <form action="" id="formAjuda">
+                <div class="box-inputs">
+                    <label for="nome">Nome completo:</label> <br>
+                    <input type="text" name="nome" placeholder="Digite seu nome" minlength="10" required>
+                </div>
+                
+                <div class="box-inputs">
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" minlength="10" required>
+                </div>
+                
+                <br>
+                
+
+                <br>
+                <div class="mensagem-item box-mensagem">
+                    <label for="mensagem">Digite sua pergunta:</label>
+                    <textarea name="mensagem" id="mensagemAjuda" required></textarea>
+                </div>
+                <input type="submit" id="enviarMensagem" value="Enviar">
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -126,5 +142,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/ajuda.js"></script>
 </body>
 </html>

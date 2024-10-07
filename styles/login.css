@@ -41,13 +41,26 @@
             font-family: 'Poppins';
         }
 
+        & .box-inputs{
+            margin: 5px 0px 15px 0px;
+        }
+
         & .input{
             padding: 10px 0px 10px 10px;
             width: 100%;
-            margin: 5px 0px 15px 0px;
             border: 0px;
             border-bottom: 1px solid var(--roxo);
             border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        & .input-invalido{
+            color: var(--vermelho);
+            font-weight: 500;
+        }
+
+        & .input-hidden{
+            display: none;
         }
     
         & .label{
