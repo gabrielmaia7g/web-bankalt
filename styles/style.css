@@ -15,6 +15,7 @@
     --azul-escuro: rgba(26, 45, 78, 1);
     --branco: rgba(240,239,244,1);
     --cinza: rgba(130,130,130,1);
+    --cinza-escuro: rgb(33, 33, 33);
     --efeito-vidro: rgba(255, 255, 255, 0.05);
     --degrade-verde-azul: linear-gradient(var(--verde-agua), var(--azul));
     --degrade-azul-roxo: linear-gradient(var(--azul), var(--roxo));
@@ -41,7 +42,6 @@ body{
     color: var(--roxo);
 }
 
-
 ::selection {
     background: var(--azul);
     color: var(--branco);
@@ -50,11 +50,6 @@ body{
 p{
     line-height: 150%;
 }
-/*:hover{
-    transition: 0.5s ease-in-out;
-}*/
-
-
 
 button{
     font-family: 'Poppins';
@@ -243,7 +238,6 @@ header nav a{
     display: block;
 }
 
-
 /*SECAO PRINCIPAL*/
 .secao-principal{
     display: flex;
@@ -320,6 +314,7 @@ header nav a{
     width: 30px;
     height: 30px;
     color: var(--azul);
+    padding: 5px;
 }
 
 .secao-principal .bi:hover{
@@ -584,11 +579,16 @@ header nav a{
     text-decoration: underline;
 }
 
+.footer-contato{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .footer-opcoes{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
 }
 
 .footer-opcoes-item{
@@ -749,10 +749,15 @@ hr{
     }
 }
 
-/*(@media screen and (prefers-color-scheme: dark) {
-    // Dark mode styles
+/*@media screen and (prefers-color-scheme: dark) {
     :root{
-        --branco: #000000;
+        --branco: var(--cinza-escuro);
         --preto: rgba(240,239,244,1);
+        
+    }
+
+    .footer{
+        color: var(--cinza);
+        background-color: var(--branco);
     }
 }*/
