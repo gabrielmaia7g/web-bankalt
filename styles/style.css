@@ -41,8 +41,9 @@ body{
     color: var(--roxo);
 }
 
+
 ::selection {
-    background-color: var(--azul);
+    background: var(--azul);
     color: var(--branco);
 }
 
@@ -261,6 +262,11 @@ header nav a{
 .secao-principal .titulo{
     font-size: 3em;
     font-weight: 700;
+    /*background-image: linear-gradient(to bottom, var(--azul), var(--roxo));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;*/
 }
 
 .texto-logo img{
@@ -292,7 +298,7 @@ header nav a{
 
 .secao-principal .conta{
     display: flex;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -305,13 +311,21 @@ header nav a{
     border-radius: 100px;
 }
 
-.secao-principal .conta img{
-    width: 35px;
-    height: 35px;
+
+.conta .botao-conta:hover{
+    background: var(--azul);
 }
 
-.botao-conta:hover{
-    background: var(--azul);
+.secao-principal .bi{
+    width: 30px;
+    height: 30px;
+    color: var(--azul);
+}
+
+.secao-principal .bi:hover{
+    transition: all ease-in 0.5s;
+    scale: 120%;
+    color: var(--roxo);
 }
 
 /*SECAO DESCRICAO*/
